@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: my-statefulset
+spec:
+  serviceName: "my-service"    # Headless Service 名稱，用於網絡標識
+  replicas: 1                  # Pod 副本數
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      # 指定 imagePullSecrets 以拉取來自 Harbor 的鏡像
+      imagePullSecrets:
+        - name: harbor1-secret
+        - name: harbor2-secret
+      containers:
+        # 容器 1：從第一個 Harbor 拉取鏡像
+        - name: container-1
+          image: harbor1.example.com/my-project/image1:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: shared-data
+              mountPath: /data/shared
+
+        # 容器 2：從第二個 Harbor 拉取鏡像
+        - name: container-2
+          image: harbor2.example.com/my-project/image2:latest
+          ports:
+            - containerPort: 9090
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+          volumeMounts:
+            - name: shared-data
+              mountPath: /data/shared
+
+      # 共享存儲卷配置
+      volumes:
+        - name: shared-data
+          emptyDir: {}
