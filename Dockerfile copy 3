@@ -1,0 +1,39 @@
+# 使用 Python 3.9 slim 作為基礎映像
+FROM python:3.9-slim
+
+# 更新系統並安裝必要依賴和 MariaDB
+RUN apt-get update && apt-get install -y \
+    mariadb-server \
+    mariadb-client \
+    libmariadb-dev \
+    gcc \
+    libffi-dev \
+    libssl-dev \
+    && apt-get clean
+
+# 設置 MariaDB root 密碼和數據庫名稱
+ENV MARIADB_ROOT_PASSWORD=yourpassword
+ENV MARIADB_DATABASE=fastapi_crud
+
+# 初始化 MariaDB 數據庫目錄，設置 root 密碼並啟用服務
+RUN mysqld_safe \
+    sleep 20 \
+    mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '${MARIADB_ROOT_PASSWORD}'" && \
+    mysql -e "FLUSH PRIVILEGES"
+
+# 複製初始化 SQL 文件到容器
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# 安裝 FastAPI 和 Python 依賴
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 複製應用程式碼
+WORKDIR /app
+COPY . /app/
+
+# 暴露服務端口
+EXPOSE 3306 8000
+
+# 啟動 MariaDB 和 FastAPI
+CMD ["sh", "-c", "mysqld_safe & sleep 30 && uvicorn main:app --host 0.0.0.0 --port 8000"]

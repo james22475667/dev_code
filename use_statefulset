@@ -1,0 +1,115 @@
+
+# Kubernetes StatefulSet 部署问题排查
+
+## 1. 格式错误
+**问题描述：**  
+YAML 文件中格式问题（如缩进、语法错误）会导致 Kubernetes 忽略部分配置。
+
+**排查方法：**
+1. 使用 YAML 校验工具检查格式是否正确：
+   ```bash
+   yamllint statefulset.yaml
+   ```
+2. 确认 `containers` 字段是否正确定义，缩进是否一致。
+3. 确认第三个容器的 `name` 和 `image` 字段没有拼写错误，且不重复。
+
+---
+
+## 2. 资源限制
+**问题描述：**  
+Kubernetes 集群节点的资源不足可能导致部分容器无法启动。
+
+**排查方法：**
+1. 检查 Pod 的状态，确保没有 `Pending` 或 `Evicted` 状态：
+   ```bash
+   kubectl get pods
+   ```
+2. 查看 Pod 描述，检查资源是否超出限制：
+   ```bash
+   kubectl describe pod <pod-name>
+   ```
+   重点查看事件日志中是否有类似 `Insufficient CPU` 或 `Insufficient Memory` 的报错。
+3. 确认 StatefulSet 配置的 `resources` 部分是否合理。例如：
+   ```yaml
+   resources:
+     requests:
+       memory: "256Mi"
+       cpu: "500m"
+     limits:
+       memory: "512Mi"
+       cpu: "1"
+   ```
+
+**解决方案：**
+- 减少资源请求或限制，确保容器能够被调度。
+- 增加集群节点的资源（CPU、内存）。
+
+---
+
+## 3. 镜像拉取失败
+**问题描述：**  
+第三个容器的镜像可能因地址错误、网络问题或凭据问题无法拉取。
+
+**排查方法：**
+1. 检查 Pod 的状态，是否有 `ImagePullBackOff` 或 `ErrImagePull` 错误：
+   ```bash
+   kubectl describe pod <pod-name>
+   ```
+2. 确认第三个镜像的 URL 是否正确（如 `harbor.example.com/repo3/image3:tag3`）。
+3. 如果需要身份验证，检查 `imagePullSecrets` 是否正确配置：
+   ```bash
+   kubectl get secret harbor-secret -o yaml
+   ```
+
+**解决方案：**
+- 确保镜像仓库地址和凭据正确。
+- 测试手动拉取镜像是否成功：
+  ```bash
+  docker pull harbor.example.com/repo3/image3:tag3
+  ```
+- 如果镜像无法拉取，检查网络连通性或仓库设置。
+
+---
+
+## 4. 调度策略或限制
+**问题描述：**  
+调度策略可能限制了 Pod 被分配到合适的节点上，导致部分容器未运行。
+
+**排查方法：**
+1. 检查是否设置了 Node Selector、Taints/Tolerations 或 Affinity：
+   ```yaml
+   spec:
+     nodeSelector:
+       disktype: ssd
+     tolerations:
+     - key: "key1"
+       operator: "Exists"
+       effect: "NoSchedule"
+     affinity:
+       nodeAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+           nodeSelectorTerms:
+           - matchExpressions:
+             - key: disktype
+               operator: In
+               values:
+               - ssd
+   ```
+2. 查看节点状态，确保节点可用：
+   ```bash
+   kubectl get nodes
+   ```
+   重点检查节点的 `STATUS` 是否为 `Ready`。
+
+**解决方案：**
+- 修改 StatefulSet 配置，移除过于严格的调度限制。
+- 确保节点处于 `Ready` 状态，且资源充足。
+
+---
+
+## 总结
+逐步检查以下几方面：
+1. **格式问题：** 使用 YAML 校验工具检查。
+2. **资源限制：** 确保集群节点有足够资源，调整 StatefulSet 中的资源请求。
+3. **镜像拉取：** 确认镜像地址和凭据正确，检查 Pod 状态日志中的错误信息。
+4. **调度限制：** 查看 Node 状态和调度策略，确保没有调度冲突。
