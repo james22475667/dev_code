@@ -1,0 +1,28 @@
+docker run -d --entrypoint /bin/bash -p 3307:3306 -p 8000:8000 --name fastapi-container fastapi-python-mariadb -c "tail -f /dev/null"
+docker exec -it fastapi-container bash
+
+mysqld_safe &
+jobs
+mysql -u root -p < /docker-entrypoint-initdb.d/init.sql
+mysql -u root -p
+uvicorn main:app --host 0.0.0.0 --port 8000 &
+
+
+
+
+docker run -d -p 3307:3306 -p 8000:8000 --name fastapi-container fastapi-python-mariadb tail -f /dev/null
+docker exec -it fastapi-container bash
+
+
+docker run -d -p 3307:3306 -p 8000:8000 --name fastapi-container fastapi-python-mariadb
+docker exec -it fastapi-container bash
+
+通用:
+port要注意，可能不能用8000
+killall mysqld_safe
+
+docker build -t fastapi-python-mariadb .
+docker tag fastapi-python-mariadb:latest myapp-db:latest-2
+
+docker stop fastapi-container
+docker rm fastapi-container

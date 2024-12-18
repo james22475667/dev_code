@@ -1,0 +1,177 @@
+1. 导入模块
+python
+複製程式碼
+import csv
+import os
+import time
+from datetime import datetime
+from prometheus_client.core import GaugeMetricFamily, REGISTRY
+from prometheus_client import start_http_server
+import logging
+from filelock import FileLock, Timeout
+from logging.handlers import RotatingFileHandler
+导入模块功能
+csv：处理 CSV 文件，用于读取和解析 log.csv 文件。
+os：文件操作模块，用于重命名和删除文件。
+time：提供定时功能，用于保持 Exporter 持续运行。
+datetime：生成时间戳，用于为临时文件命名。
+prometheus_client.core：核心 Prometheus 客户端库，用于定义自定义指标。
+prometheus_client.start_http_server：启动 HTTP 服务，暴露指标给 Prometheus。
+logging：日志模块，用于记录操作信息。
+filelock：文件锁模块，确保文件操作的并发安全。
+logging.handlers.RotatingFileHandler：日志文件轮换管理器，用于限制日志文件大小并保留旧日志。
+2. 日志配置
+python
+複製程式碼
+log_handler = RotatingFileHandler(
+    "exporter.log", maxBytes=5 * 1024 * 1024, backupCount=3
+)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[log_handler]
+)
+功能
+设置日志文件 exporter.log。
+每个日志文件大小限制为 5 MB，当文件超出大小时生成新文件。
+保留最近的 3 个日志文件。
+日志格式包含时间、日志级别和日志信息。
+3. 类：LogExporter
+负责从 CSV 文件中提取数据，生成 Prometheus 指标。
+
+3.1 初始化
+python
+複製程式碼
+class LogExporter:
+    def __init__(self, log_file):
+        self.log_file = log_file
+        self.lock_file = f"{log_file}.lock"  # 文件锁路径
+self.log_file：原始 CSV 文件路径。
+self.lock_file：锁文件路径，确保对 log.csv 的操作是线程安全的。
+3.2 方法：collect
+python
+複製程式碼
+def collect(self):
+    ...
+Prometheus 在抓取指标时调用 collect 方法，动态生成监控数据。
+
+逻辑流程
+生成临时文件名：
+
+python
+複製程式碼
+timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+tmp_log_file = f"tmp_log_{timestamp}.csv"
+检查锁文件：
+
+python
+複製程式碼
+self._cleanup_lock()
+调用 _cleanup_lock 方法，清理无效的锁文件。
+
+加锁并重命名文件：
+
+python
+複製程式碼
+with FileLock(self.lock_file, timeout=5):
+    if not os.path.exists(self.log_file):
+        logging.warning(f"Log file {self.log_file} does not exist.")
+        return
+    os.rename(self.log_file, tmp_log_file)
+加锁后，将 log.csv 重命名为 tmp_log_<时间戳>.csv，避免冲突。
+统计数据：
+
+python
+複製程式碼
+counts = self._count_host_job(tmp_log_file)
+调用 _count_host_job 方法统计 host 和 job_name 的组合出现次数。
+
+生成指标：
+
+python
+複製程式碼
+metric = GaugeMetricFamily(
+    "log_host_job_count",
+    "Count of occurrences of host and job_name in log",
+    labels=["host", "job_name"]
+)
+for (host, job_name), count in counts.items():
+    metric.add_metric([host, job_name], count)
+使用 GaugeMetricFamily 定义 Prometheus 指标，并填充统计结果。
+
+删除临时文件：
+
+python
+複製程式碼
+os.remove(tmp_log_file)
+3.3 方法：_count_host_job
+python
+複製程式碼
+def _count_host_job(self, tmp_log_file):
+    ...
+统计 CSV 文件中每个 host 和 job_name 的组合出现次数。
+
+逻辑流程
+打开文件：
+
+python
+複製程式碼
+with open(tmp_log_file, 'r') as f:
+    reader = csv.reader(f)
+逐行读取数据：
+
+python
+複製程式碼
+for row in reader:
+    host, job_name = row[0], row[1]
+    key = (host, job_name)
+    counts[key] = counts.get(key, 0) + 1
+每行的第一列为 host，第二列为 job_name。
+使用字典 counts 统计每个组合的次数。
+3.4 方法：_cleanup_lock
+python
+複製程式碼
+def _cleanup_lock(self):
+    ...
+检查锁文件是否有效，并清理无效的锁文件。
+
+逻辑流程
+检查锁文件是否存在：
+
+python
+複製程式碼
+if os.path.exists(self.lock_file):
+尝试获取锁：
+
+python
+複製程式碼
+with FileLock(self.lock_file, timeout=1):
+    ...
+删除无效锁文件： 如果获取锁失败，说明锁文件无效，直接删除：
+
+python
+複製程式碼
+os.remove(self.lock_file)
+4. 主程序
+python
+複製程式碼
+if __name__ == "__main__":
+    log_file = "log.csv"
+    REGISTRY.register(LogExporter(log_file))
+    start_http_server(8000)
+    logging.info("Prometheus exporter running on http://localhost:8000/metrics")
+    while True:
+        time.sleep(10)
+功能
+设置原始日志文件路径：log_file = "log.csv"。
+注册自定义收集器：REGISTRY.register(LogExporter(log_file))。
+启动 HTTP 服务：start_http_server(8000)，默认端口为 8000。
+保持程序运行：通过 while True 实现 Exporter 的持续运行。
+代码工作流总结
+Prometheus 抓取时，调用 LogExporter.collect 方法。
+log.csv 被重命名为 tmp_log_<时间戳>.csv。
+临时文件中的数据被统计成 Prometheus 指标。
+临时文件被删除，避免占用存储。
+锁文件机制确保多个进程操作时的安全性。
+日志记录操作和错误，便于调试和监控。
+通过上述逻辑，代码能动态读取和统计 CSV 数据，保证文件操作的并发安全，同时将数据暴露给 Prometheus。
