@@ -1,0 +1,182 @@
+2025-02-23 16:07:40,422 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-23 16:07:40,424 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:07:50,429 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:08:03,358 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:11:02,704 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-23 16:11:02,706 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:11:12,714 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:11:22,722 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:11:35,667 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:11:45,677 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:11:55,692 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:12:08,631 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:12:18,641 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:12:28,650 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:12:38,661 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:12:51,603 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:13:01,612 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:13:11,622 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:13:24,571 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:13:34,580 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:13:44,590 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:13:57,529 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:14:07,538 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:14:17,546 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:14:30,479 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:14:40,488 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:14:50,498 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:15:00,508 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:15:13,498 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:15:23,508 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:15:33,520 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:15:38,942 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-23 16:15:38,953 - INFO - Metrics updated successfully.
+2025-02-23 16:15:48,962 - INFO - Metrics updated successfully.
+2025-02-23 16:15:58,967 - INFO - Metrics updated successfully.
+2025-02-23 16:16:08,980 - INFO - Metrics updated successfully.
+2025-02-23 16:16:21,924 - INFO - Metrics updated successfully.
+2025-02-23 16:16:31,937 - INFO - Metrics updated successfully.
+2025-02-23 16:16:41,948 - INFO - Metrics updated successfully.
+2025-02-23 16:16:54,894 - INFO - Metrics updated successfully.
+2025-02-23 16:17:04,905 - INFO - Metrics updated successfully.
+2025-02-23 16:17:14,922 - INFO - Metrics updated successfully.
+2025-02-23 16:17:27,871 - INFO - Metrics updated successfully.
+2025-02-23 16:19:02,896 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-23 16:19:02,900 - INFO - Metrics updated successfully.
+2025-02-23 16:19:15,848 - INFO - Metrics updated successfully.
+2025-02-23 16:19:25,855 - INFO - Metrics updated successfully.
+2025-02-23 16:19:35,864 - INFO - Metrics updated successfully.
+2025-02-23 16:19:48,814 - INFO - Metrics updated successfully.
+2025-02-23 16:19:58,823 - INFO - Metrics updated successfully.
+2025-02-23 16:23:10,636 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-23 16:23:10,641 - INFO - Metrics updated successfully.
+2025-02-23 16:23:10,642 - INFO - Updated metrics successfully.
+2025-02-23 16:23:23,589 - INFO - Metrics updated successfully.
+2025-02-23 16:23:23,590 - INFO - Updated metrics successfully.
+2025-02-23 16:23:33,601 - INFO - Metrics updated successfully.
+2025-02-23 16:23:33,602 - INFO - Updated metrics successfully.
+2025-02-23 16:23:43,616 - INFO - Metrics updated successfully.
+2025-02-23 16:23:43,618 - INFO - Updated metrics successfully.
+2025-02-23 16:23:56,558 - INFO - Metrics updated successfully.
+2025-02-23 16:23:56,559 - INFO - Updated metrics successfully.
+2025-02-23 16:24:06,571 - INFO - Metrics updated successfully.
+2025-02-23 16:24:06,572 - INFO - Updated metrics successfully.
+2025-02-23 16:24:16,581 - INFO - Metrics updated successfully.
+2025-02-23 16:24:16,582 - INFO - Updated metrics successfully.
+2025-02-23 16:24:29,529 - INFO - Metrics updated successfully.
+2025-02-23 16:24:29,530 - INFO - Updated metrics successfully.
+2025-02-23 16:24:39,539 - INFO - Metrics updated successfully.
+2025-02-23 16:24:39,540 - INFO - Updated metrics successfully.
+2025-02-23 16:24:49,550 - INFO - Metrics updated successfully.
+2025-02-23 16:24:49,550 - INFO - Updated metrics successfully.
+2025-02-23 16:25:02,507 - INFO - Metrics updated successfully.
+2025-02-23 16:25:02,509 - INFO - Updated metrics successfully.
+2025-02-23 16:25:12,518 - INFO - Metrics updated successfully.
+2025-02-23 16:25:12,519 - INFO - Updated metrics successfully.
+2025-02-23 16:25:22,527 - INFO - Metrics updated successfully.
+2025-02-23 16:25:22,528 - INFO - Updated metrics successfully.
+2025-02-23 16:25:32,537 - INFO - Metrics updated successfully.
+2025-02-23 16:25:32,538 - INFO - Updated metrics successfully.
+2025-02-23 16:25:45,491 - INFO - Metrics updated successfully.
+2025-02-23 16:25:45,493 - INFO - Updated metrics successfully.
+2025-02-23 16:25:55,501 - INFO - Metrics updated successfully.
+2025-02-23 16:25:55,502 - INFO - Updated metrics successfully.
+2025-02-23 16:26:05,512 - INFO - Metrics updated successfully.
+2025-02-23 16:26:05,513 - INFO - Updated metrics successfully.
+2025-02-23 16:26:18,439 - INFO - Metrics updated successfully.
+2025-02-23 16:26:18,440 - INFO - Updated metrics successfully.
+2025-02-23 16:26:28,449 - INFO - Metrics updated successfully.
+2025-02-23 16:26:28,450 - INFO - Updated metrics successfully.
+2025-02-23 16:26:38,459 - INFO - Metrics updated successfully.
+2025-02-23 16:26:38,461 - INFO - Updated metrics successfully.
+2025-02-23 16:26:51,452 - INFO - Metrics updated successfully.
+2025-02-23 16:26:51,452 - INFO - Updated metrics successfully.
+2025-02-23 16:27:01,461 - INFO - Metrics updated successfully.
+2025-02-23 16:27:01,462 - INFO - Updated metrics successfully.
+2025-02-23 16:27:11,471 - INFO - Metrics updated successfully.
+2025-02-23 16:27:11,472 - INFO - Updated metrics successfully.
+2025-02-23 16:27:24,406 - INFO - Metrics updated successfully.
+2025-02-23 16:27:24,407 - INFO - Updated metrics successfully.
+2025-02-23 16:27:34,416 - INFO - Metrics updated successfully.
+2025-02-23 16:27:34,417 - INFO - Updated metrics successfully.
+2025-02-23 16:27:44,426 - INFO - Metrics updated successfully.
+2025-02-23 16:27:44,428 - INFO - Updated metrics successfully.
+2025-02-23 16:27:54,437 - INFO - Metrics updated successfully.
+2025-02-23 16:27:54,438 - INFO - Updated metrics successfully.
+2025-02-23 16:28:07,383 - INFO - Metrics updated successfully.
+2025-02-23 16:28:07,383 - INFO - Updated metrics successfully.
+2025-02-23 16:28:17,392 - INFO - Metrics updated successfully.
+2025-02-23 16:28:17,393 - INFO - Updated metrics successfully.
+2025-02-23 16:28:27,403 - INFO - Metrics updated successfully.
+2025-02-23 16:28:27,404 - INFO - Updated metrics successfully.
+2025-02-23 16:28:40,345 - INFO - Metrics updated successfully.
+2025-02-23 16:28:40,347 - INFO - Updated metrics successfully.
+2025-02-23 16:28:50,356 - INFO - Metrics updated successfully.
+2025-02-23 16:28:50,357 - INFO - Updated metrics successfully.
+2025-02-23 16:29:00,366 - INFO - Metrics updated successfully.
+2025-02-23 16:29:00,368 - INFO - Updated metrics successfully.
+2025-02-23 16:29:13,311 - INFO - Metrics updated successfully.
+2025-02-23 16:29:13,312 - INFO - Updated metrics successfully.
+2025-02-23 16:29:23,321 - INFO - Metrics updated successfully.
+2025-02-23 16:29:23,323 - INFO - Updated metrics successfully.
+2025-02-23 16:29:33,331 - INFO - Metrics updated successfully.
+2025-02-23 16:29:33,332 - INFO - Updated metrics successfully.
+2025-02-23 16:29:46,274 - INFO - Metrics updated successfully.
+2025-02-23 16:29:46,275 - INFO - Updated metrics successfully.
+2025-02-23 16:29:56,290 - INFO - Metrics updated successfully.
+2025-02-23 16:29:56,291 - INFO - Updated metrics successfully.
+2025-02-23 16:30:06,299 - INFO - Metrics updated successfully.
+2025-02-23 16:30:06,300 - INFO - Updated metrics successfully.
+2025-02-23 16:30:19,242 - INFO - Metrics updated successfully.
+2025-02-23 16:30:19,243 - INFO - Updated metrics successfully.
+2025-02-23 16:30:29,252 - INFO - Metrics updated successfully.
+2025-02-23 16:30:29,253 - INFO - Updated metrics successfully.
+2025-02-23 16:30:39,262 - INFO - Metrics updated successfully.
+2025-02-23 16:30:39,263 - INFO - Updated metrics successfully.
+2025-02-23 16:30:49,272 - INFO - Metrics updated successfully.
+2025-02-23 16:30:49,273 - INFO - Updated metrics successfully.
+2025-02-23 16:31:02,218 - INFO - Metrics updated successfully.
+2025-02-23 16:31:02,219 - INFO - Updated metrics successfully.
+2025-02-23 16:31:12,228 - INFO - Metrics updated successfully.
+2025-02-23 16:31:12,229 - INFO - Updated metrics successfully.
+2025-02-23 16:31:22,238 - INFO - Metrics updated successfully.
+2025-02-23 16:31:22,238 - INFO - Updated metrics successfully.
+2025-02-23 16:31:35,180 - INFO - Metrics updated successfully.
+2025-02-23 16:31:35,181 - INFO - Updated metrics successfully.
+2025-02-23 16:31:45,190 - INFO - Metrics updated successfully.
+2025-02-23 16:31:45,191 - INFO - Updated metrics successfully.
+2025-02-23 16:31:55,199 - INFO - Metrics updated successfully.
+2025-02-23 16:31:55,200 - INFO - Updated metrics successfully.
+2025-02-23 16:32:08,151 - INFO - Metrics updated successfully.
+2025-02-23 16:32:08,152 - INFO - Updated metrics successfully.
+2025-02-23 16:32:18,161 - INFO - Metrics updated successfully.
+2025-02-23 16:32:18,162 - INFO - Updated metrics successfully.
+2025-02-23 16:32:28,171 - INFO - Metrics updated successfully.
+2025-02-23 16:32:28,172 - INFO - Updated metrics successfully.
+2025-02-23 16:32:41,109 - INFO - Metrics updated successfully.
+2025-02-23 16:32:41,110 - INFO - Updated metrics successfully.
+2025-02-23 16:32:59,838 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-23 16:32:59,839 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:33:09,849 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:33:22,790 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:33:32,799 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:33:42,805 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:33:55,750 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:34:05,760 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:34:15,767 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:34:28,705 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:34:38,715 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:34:48,721 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:35:01,654 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:35:11,665 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:35:21,672 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:35:31,679 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:35:44,634 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:35:54,642 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:36:04,649 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:36:17,584 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:36:27,594 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:36:37,600 - WARNING - Log file log.csv does not exist.
+2025-02-23 16:36:50,540 - WARNING - Log file log.csv does not exist.
+2025-02-24 07:40:32,695 - INFO - Prometheus exporter running on http://localhost:8080/metrics
+2025-02-24 07:40:32,738 - INFO - Metrics updated successfully.

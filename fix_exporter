@@ -1,0 +1,126 @@
+import csv
+import os
+import time
+from datetime import datetime
+from prometheus_client.core import GaugeMetricFamily, REGISTRY
+from prometheus_client import start_http_server
+import logging
+from filelock import FileLock, Timeout
+from logging.handlers import RotatingFileHandler
+from threading import Lock
+
+# 設置日誌輪替
+log_handler = RotatingFileHandler(
+    "exporter.log", maxBytes=5 * 1024 * 1024, backupCount=3
+)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[log_handler]
+)
+
+class LogExporter:
+    def __init__(self, log_file):
+        self.log_file = log_file  # log.csv 檔案
+        self.tmp_log_file = None  # 存儲 tmp_log_<timestamp>.csv
+        self.lock_file = f"{log_file}.lock"  # 鎖文件
+        self.metric_cache = {}  # 快取 metric 數據
+        self.cache_lock = Lock()  # 確保 metric_cache 讀寫安全
+
+    def collect(self):
+        """讀取 metric 快取，確保所有 Scrapers 拿到相同的值"""
+        with self.cache_lock:
+            metric = GaugeMetricFamily(
+                "log_host_job_count",
+                "Count of occurrences of host and job_name in log",
+                labels=["host", "job_name"]
+            )
+            for (host, job_name), count in self.metric_cache.items():
+                metric.add_metric([host, job_name], count)
+
+        yield metric  # 返回 metric 指標
+
+    def update_metrics(self):
+        """從最新的 tmp_log_<timestamp>.csv 更新 metric"""
+        if not self.tmp_log_file or not os.path.exists(self.tmp_log_file):
+            logging.warning(f"Temporary log file {self.tmp_log_file} does not exist.")
+            return
+        
+        counts = self._count_host_job(self.tmp_log_file)
+
+        # 更新快取
+        with self.cache_lock:
+            self.metric_cache = counts
+
+        logging.info("Metrics updated successfully.")
+
+    def _count_host_job(self, tmp_log_file):
+        """計算 tmp_log_<timestamp>.csv 中 host 和 job_name 的出現次數"""
+        counts = {}
+        try:
+            with open(tmp_log_file, 'r') as f:
+                reader = csv.reader(f)
+                for row in reader:
+                    host, job_name = row[0], row[1]
+                    key = (host, job_name)
+                    counts[key] = counts.get(key, 0) + 1
+        except Exception as e:
+            logging.error(f"Error reading log file {tmp_log_file}: {e}")
+        return counts
+
+    def cleanup_lock(self):
+        """刪除過期的鎖文件"""
+        if os.path.exists(self.lock_file):
+            try:
+                with FileLock(self.lock_file, timeout=1):
+                    logging.info("Lock file is valid, no need to clean up.")
+            except Timeout:
+                try:
+                    os.remove(self.lock_file)
+                    logging.warning(f"Removed stale lock file {self.lock_file}")
+                except Exception as e:
+                    logging.error(f"Error removing stale lock file {self.lock_file}: {e}")
+
+    def rename_log_file(self):
+        """將 log.csv 重新命名為 tmp_log_<timestamp>.csv"""
+        if not os.path.exists(self.log_file):
+            logging.warning(f"Log file {self.log_file} does not exist.")
+            return None
+
+        timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+        tmp_log_file = f"tmp_log_{timestamp}.csv"
+
+        try:
+            os.rename(self.log_file, tmp_log_file)
+            logging.info(f"Renamed {self.log_file} to {tmp_log_file}")
+            return tmp_log_file
+        except Exception as e:
+            logging.error(f"Error renaming file: {e}")
+            return None
+            
+if __name__ == "__main__":
+    log_file = "log.csv"
+    exporter = LogExporter(log_file)
+
+    # 註冊 Prometheus 指標
+    REGISTRY.register(exporter)
+
+    # 啟動 HTTP 監聽
+    start_http_server(8000)
+    logging.info("Prometheus exporter running on http://localhost:8000/metrics")
+
+    # 監控迴圈
+    while True:
+        # 清理過期的鎖文件
+        exporter.cleanup_lock()
+
+        # 使用文件鎖，確保安全操作
+        with FileLock(exporter.lock_file, timeout=5):
+            # 重新命名 log.csv，避免讀取時衝突
+            exporter.tmp_log_file = exporter.rename_log_file()
+
+        # 更新指標快取 (所有 Scrapers 拿到的值會相同)
+        exporter.update_metrics()
+
+        # 等待 Prometheus 抓取指標
+        time.sleep(10)
