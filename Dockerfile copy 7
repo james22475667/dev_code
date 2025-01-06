@@ -15,13 +15,13 @@ RUN apt-get update && apt-get install -y \
 ENV MARIADB_ROOT_PASSWORD=yourpassword
 ENV MARIADB_DATABASE=fastapi_crud
 
-# # 初始化 MariaDB 數據目錄並設置 root 密碼
-# RUN mariadb-install-db --user=mysql --datadir=/var/lib/mysql && \
-#     mysqld_safe & \
-#     sleep 30 && \
-#     mysqladmin --user=root password "${MARIADB_ROOT_PASSWORD}" && \
-#     mysql -u root -p"${MARIADB_ROOT_PASSWORD}" -e "FLUSH PRIVILEGES" && \
-#     pkill -f mysqld_safe
+# 初始化 MariaDB 數據目錄並設置 root 密碼
+RUN mariadb-install-db --user=mysql --datadir=/var/lib/mysql && \
+    mysqld_safe & \
+    sleep 30 && \
+    mysqladmin --user=root password "${MARIADB_ROOT_PASSWORD}" && \
+    mysql -u root -p"${MARIADB_ROOT_PASSWORD}" -e "FLUSH PRIVILEGES" && \
+    pkill -f mysqld_safe
 
 # 複製初始化 SQL 文件到容器
 COPY init.sql /docker-entrypoint-initdb.d/
