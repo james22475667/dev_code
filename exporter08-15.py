@@ -1,3 +1,4 @@
+#2個不同的metric
 from prometheus_client import Gauge, start_http_server
 import time
 
