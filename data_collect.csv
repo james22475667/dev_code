@@ -1,4 +1,4 @@
-host_1,job_A, {service_name=”aaa”, container_name=”bbbb”}
+host_1,job_A, {service_name=”aaa” container_name=”bbbb”}
 host_1,job_A
 host_1,job_B
 host_2,job_A

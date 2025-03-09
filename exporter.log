@@ -180,3 +180,520 @@
 2025-02-23 16:36:50,540 - WARNING - Log file log.csv does not exist.
 2025-02-24 07:40:32,695 - INFO - Prometheus exporter running on http://localhost:8080/metrics
 2025-02-24 07:40:32,738 - INFO - Metrics updated successfully.
+2025-03-09 16:10:10,555 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:10:10,562 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:10:20,567 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:10:30,575 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:10:43,507 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:10:53,514 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:11:13,522 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:11:13,523 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:11:23,529 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:11:33,538 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:11:46,449 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:11:56,456 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:12:06,466 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:12:16,471 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:12:29,412 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:12:39,415 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:12:49,422 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:13:02,100 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:13:12,104 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:13:22,112 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:13:34,855 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:13:44,864 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:13:54,873 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:14:07,517 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:14:17,524 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:14:27,534 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:14:40,475 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:14:50,482 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:00,491 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:10,497 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:23,356 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:33,363 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:43,369 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:46,524 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:15:46,525 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:15:59,354 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:16:09,362 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:16:19,369 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:16:27,945 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:16:27,946 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:16:37,952 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:16:47,961 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:17:00,917 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:17:10,925 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:17:20,936 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:17:30,942 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:17:43,774 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:17:53,779 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:18:03,790 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:18:16,731 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:18:26,736 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:18:36,744 - WARNING - Temporary log file None does not exist.
+2025-03-09 16:18:53,413 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:18:53,417 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:19:08,162 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:19:08,167 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:19:18,177 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:19:31,129 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:19:41,142 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:19:51,156 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:20:04,088 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:20:14,103 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:20:24,117 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:20:37,066 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:20:47,075 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:20:57,089 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:21:10,033 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:21:20,043 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:21:30,055 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:21:43,004 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:21:53,018 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:22:00,092 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:22:00,098 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:22:10,111 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:22:23,062 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:22:33,077 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:22:43,091 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:22:56,037 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:23:06,050 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:23:16,056 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:23:28,989 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:23:38,994 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:23:49,003 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:23:59,014 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:24:11,959 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:24:21,970 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:24:31,980 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:24:44,923 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:24:54,930 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:25:04,938 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:25:17,841 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:25:27,850 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:25:37,859 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:25:50,862 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:26:00,872 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:26:10,881 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:26:20,894 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:26:33,838 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:26:43,852 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:26:53,865 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:27:06,808 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:27:16,818 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:27:26,828 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:27:39,775 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:27:49,784 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:27:59,792 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:28:12,733 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:28:22,743 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:28:32,753 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:28:45,590 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:28:55,604 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:29:05,613 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:29:15,623 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:29:28,514 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:29:38,527 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:29:48,540 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:30:01,471 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:30:11,478 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:30:21,489 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:30:34,495 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:30:44,506 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:30:54,516 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:31:07,379 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:31:17,391 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:31:27,400 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:31:37,408 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:31:50,354 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:32:00,362 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:32:10,370 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:32:23,308 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:32:33,315 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:32:43,325 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:32:56,108 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:33:06,115 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:33:16,124 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:33:28,659 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:33:38,668 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:33:48,679 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:34:01,529 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:34:11,539 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:34:21,550 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:34:31,562 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:34:44,508 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:34:54,519 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:35:04,531 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:35:17,361 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:35:27,367 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:35:37,374 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:35:50,318 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:36:00,328 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:36:10,336 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:36:23,285 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:36:33,295 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:36:43,306 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:36:53,315 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:37:06,260 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:37:16,270 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:37:26,279 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:37:39,218 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:37:49,228 - INFO - Metrics updated successfully. Labels: [' {service_name=”aaa”', 'host', 'host_1', 'job_A', 'job_name']
+2025-03-09 16:38:03,446 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:40:38,125 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:40:38,128 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:40:38,129 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:40:38,130 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:40:38,130 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:40:38,130 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:40:38,131 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:40:38,132 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:40:38,133 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:40:38,134 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:40:48,144 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:40:48,145 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:40:48,147 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:40:48,148 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:40:48,149 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:40:48,150 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:40:48,151 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:40:48,152 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:40:48,153 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:40:58,162 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:40:58,163 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:40:58,165 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:40:58,166 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:40:58,167 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:40:58,167 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:40:58,168 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:40:58,169 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:40:58,169 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:11,116 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:41:11,117 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:41:11,118 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:41:11,119 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:41:11,119 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:41:11,120 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:11,121 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:11,122 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:11,122 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:21,134 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:41:21,135 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:41:21,136 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:41:21,137 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:41:21,137 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:41:21,138 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:21,139 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:21,140 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:21,140 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:31,149 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:41:31,150 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:41:31,151 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:41:31,152 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:41:31,153 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:41:31,153 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:31,154 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:31,155 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:31,156 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:44,090 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:41:44,092 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:41:44,094 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:41:44,095 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:41:44,097 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:41:44,099 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:44,100 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:44,101 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:44,102 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:54,114 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:41:54,115 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:41:54,115 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:41:54,116 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:41:54,117 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:41:54,117 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:54,118 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:41:54,119 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:41:54,120 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:04,127 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:42:04,128 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:42:04,129 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:42:04,129 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:42:04,130 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:42:04,131 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:04,132 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:04,133 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:04,134 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:17,073 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:42:17,074 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:42:17,075 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:42:17,075 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:42:17,076 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:42:17,077 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:17,078 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:17,079 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:17,080 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:27,084 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:42:27,085 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:42:27,086 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:42:27,087 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:42:27,088 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:42:27,090 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:27,091 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:27,093 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:27,094 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:37,102 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:42:37,103 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:42:37,104 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:42:37,104 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:42:37,105 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:42:37,106 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:37,107 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:37,109 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:37,110 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:50,064 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:42:50,065 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:42:50,066 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:42:50,066 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:42:50,067 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:42:50,068 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:50,068 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:42:50,069 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:42:50,070 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:00,084 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:43:00,085 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:43:00,085 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:43:00,086 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:43:00,087 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:43:00,087 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:00,088 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:00,089 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:00,089 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:10,099 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:43:10,101 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:43:10,102 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:43:10,103 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:43:10,105 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:43:10,105 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:10,106 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:10,107 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:10,107 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:20,120 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:43:20,121 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:43:20,121 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:43:20,122 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:43:20,124 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:43:20,124 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:20,125 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:20,127 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:20,127 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:33,066 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:43:33,067 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:43:33,067 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:43:33,068 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:43:33,069 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:43:33,070 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:33,071 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:33,073 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:33,074 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:43,084 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:43:43,085 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:43:43,086 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:43:43,087 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:43:43,088 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:43:43,089 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:43,089 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:43,091 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:43,091 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:53,105 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:43:53,106 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:43:53,107 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:43:53,108 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:43:53,108 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:43:53,109 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:53,110 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:43:53,111 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:43:53,111 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:44:06,050 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:44:06,051 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:44:06,052 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:44:06,053 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:44:06,053 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:44:06,054 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:44:06,055 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:44:06,056 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:44:06,057 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:44:16,067 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_A'}
+2025-03-09 16:44:16,068 - INFO - Extracted extra_labels: {'host_1': 'host_1', 'job_A': 'job_B'}
+2025-03-09 16:44:16,069 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_A'}
+2025-03-09 16:44:16,070 - INFO - Extracted extra_labels: {'host_1': 'host_2', 'job_A': 'job_C'}
+2025-03-09 16:44:16,071 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B', '{service_name=”aaa”': '{module_name=”cbbb”}'}
+2025-03-09 16:44:16,072 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:44:16,073 - INFO - Extracted extra_labels: {'host_1': 'host_3', 'job_A': 'job_B'}
+2025-03-09 16:44:16,074 - INFO - Final dynamic_labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:44:16,075 - INFO - Metrics updated successfully. Labels: ['host', 'host_1', 'job_A', 'job_name', '{service_name=”aaa”']
+2025-03-09 16:45:19,317 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:45:19,321 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:19,322 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:29,335 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:29,335 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:39,345 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:39,346 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:52,284 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:45:52,285 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:02,291 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:02,292 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:12,301 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:12,302 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:25,250 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:25,251 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:35,259 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:35,260 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:45,270 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:45,271 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:58,219 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:46:58,219 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:08,229 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:08,231 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:18,243 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:18,243 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:31,195 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:31,196 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:41,204 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:41,205 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:51,216 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:47:51,216 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:01,223 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:01,224 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:14,157 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:14,158 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:24,171 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:24,172 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:34,180 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:34,181 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:47,126 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:47,126 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:59,383 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:48:59,388 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:48:59,388 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:09,396 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:09,397 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:22,345 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:22,345 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:32,360 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:32,361 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:42,371 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:42,372 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:55,319 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:49:55,320 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:05,335 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:05,335 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:15,345 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:15,346 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:20,524 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:50:20,527 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:20,528 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:31,958 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:31,959 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:41,970 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:41,971 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:51,984 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:50:51,985 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:04,927 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:04,928 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:14,943 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:14,944 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:24,955 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:24,956 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:36,683 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:36,684 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:46,694 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:46,696 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:56,708 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:51:56,708 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name', '{service_name']
+2025-03-09 16:52:04,699 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:52:04,704 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:04,705 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:17,649 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:17,650 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:27,661 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:27,662 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:37,673 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:37,674 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:50,498 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:52:50,499 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:00,510 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:00,511 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:10,523 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:10,524 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:23,469 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:23,470 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:33,483 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:33,484 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:43,496 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:43,496 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:56,345 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:53:56,345 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:06,359 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:06,359 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:16,368 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:16,369 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:29,308 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:29,309 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:39,317 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:39,318 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:49,328 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:49,329 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:59,338 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:54:59,339 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:12,285 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:12,286 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:22,294 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:22,295 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:32,307 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:32,307 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:44,954 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:44,954 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:54,967 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:55:54,968 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:04,977 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:04,978 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:17,541 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:17,542 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:27,554 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:27,555 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:37,564 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:37,565 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:42,308 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:56:42,313 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:42,314 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:55,093 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:56:55,094 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:05,104 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:05,105 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:15,118 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:15,119 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:27,838 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:27,839 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:37,849 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:37,850 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:47,863 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:57:47,864 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:00,588 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:00,589 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:10,602 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:10,603 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:20,615 - INFO - Final dynamic_labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:20,616 - INFO - Metrics updated successfully. Labels: ['container_name', 'host', 'job_name', 'module_name']
+2025-03-09 16:58:34,040 - INFO - Prometheus exporter running on http://localhost:8000/metrics
+2025-03-09 16:58:34,051 - INFO - Final dynamic_labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:58:34,052 - INFO - Metrics updated successfully. Labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:58:44,064 - INFO - Final dynamic_labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:58:44,065 - INFO - Metrics updated successfully. Labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:58:54,072 - INFO - Final dynamic_labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:58:54,073 - INFO - Metrics updated successfully. Labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:59:04,085 - INFO - Final dynamic_labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:59:04,086 - INFO - Metrics updated successfully. Labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:59:16,837 - INFO - Final dynamic_labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:59:16,838 - INFO - Metrics updated successfully. Labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:59:26,849 - INFO - Final dynamic_labels: ['host', 'job_name', 'module_name', 'service_name']
+2025-03-09 16:59:26,850 - INFO - Metrics updated successfully. Labels: ['host', 'job_name', 'module_name', 'service_name']
