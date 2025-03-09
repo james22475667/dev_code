@@ -1,8 +1,9 @@
-host_1,job_A, {service_name=”aaa”, container_name=”bbbb”}
-host_1,job_A
-host_1,job_B
-host_2,job_A
-host_2,job_C
-host_3,job_B, {module_name=”cbbb”}
-host_3,job_B
-host_3,job_B
+host,job_name,service_name,container_name,module_name
+host_1,job_A,aaa,bbbb,
+host_1,job_A,,,
+host_1,job_B,,,
+host_2,job_A,,,
+host_2,job_C,,,
+host_3,job_B,,,cbbb
+host_3,job_B,,,
+host_3,job_B,,,
