@@ -1,0 +1,78 @@
+### Prometheus Exporter 技術文件
+
+#### 1. 簡介
+本 `Prometheus Exporter` 會從 `CSV` 讀取 `log` 數據，解析 `host, job_name`，並動態偵測可能的標籤 (`service_name, container_name, module_name`)。
+根據不同的標籤組合，Exporter 會建立 **3 種不同的 `metrics`**：
+- `log_host_job_basic`：僅包含 `host` 和 `job_name`
+- `log_host_job_service`：包含 `service_name, container_name`
+- `log_host_job_module`：包含 `module_name`
+
+#### 2. CSV 檔案格式
+示例 (`bak-data_collect-1.csv`)：
+```
+host_1,job_A, {service_name="aaa", container_name="bbbb"}
+host_1,job_A
+host_1,job_B
+host_2,job_A
+host_2,job_C
+host_3,job_B, {module_name="cbbb"}
+host_3,job_B
+host_3,job_B
+```
+
+#### 3. 運作流程
+1. **讀取 CSV**，解析 `host` 和 `job_name`
+2. **動態偵測額外標籤 (`service_name, container_name, module_name`)**
+3. **計算 `metrics` 數值**
+4. **將 `metrics` 更新到 Prometheus**
+
+#### 4. `Prometheus` 指標計算
+```python
+counts_basic = {}
+counts_service = {}
+counts_module = {}
+
+for host, job, extra_labels in log_data:
+    # 基本 `metrics`
+    basic_key = (host, job)
+    counts_basic[basic_key] = counts_basic.get(basic_key, 0) + 1
+
+    # 包含 `service_name, container_name` 的 `metrics`
+    if "service_name" in extra_labels or "container_name" in extra_labels:
+        service_key = (host, job, frozenset({k: v for k, v in extra_labels.items() if k in ["service_name", "container_name"]}.items()))
+        counts_service[service_key] = counts_service.get(service_key, 0) + 1
+
+    # 包含 `module_name` 的 `metrics`
+    if "module_name" in extra_labels:
+        module_key = (host, job, frozenset({k: v for k, v in extra_labels.items() if k == "module_name"}.items()))
+        counts_module[module_key] = counts_module.get(module_key, 0) + 1
+```
+
+#### 5. `Prometheus` 指標格式
+```
+# HELP log_host_job_service Count of occurrences with service-related labels
+# TYPE log_host_job_service gauge
+log_host_job_service{container_name="bbbb",host="host_1",job_name="job_A",service_name="aaa"} 1.0
+
+# HELP log_host_job_module Count of occurrences with module-related labels
+# TYPE log_host_job_module gauge
+log_host_job_module{host="host_3",job_name="job_B",module_name="cbbb"} 1.0
+```
+
+#### 6. 主要技術概念
+- **`set`**：用來存 `labels`，確保不會重複。
+- **`dict`**：存 `metrics` 計數，使用 `.get()` 來累加數值。
+- **`frozenset`**：用來當 `dict` 的 `key`，讓 `labels` 組合成唯一標識。
+- **`print` debug**：觀察 `metrics` 計算過程，確保計算正確。
+
+#### 7. `Exporter` 啟動方式
+```bash
+python3 exporter.py
+```
+
+#### 8. 訪問 `Prometheus Exporter`
+打開瀏覽器，訪問：
+```
+http://localhost:8080/metrics
+```
+
