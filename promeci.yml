@@ -1,0 +1,37 @@
+# scrape_config.tpl.yml
+scrape_configs:
+  - job_name: "secure_exporter"
+    static_configs:
+  - targets: ["10.0.0.123:8080"]
+    basic_auth:
+      username: "${SCRAPE_USERNAME}"
+      password: "${SCRAPE_PASSWORD}"
+
+
+# .gitlab-ci.yml
+stages:
+  - generate
+  - deploy
+
+generate_prometheus_config:
+  stage: generate
+  image: alpine
+  script:
+    - apk add --no-cache gettext
+    - envsubst < scrape_config.tpl.yml > scrape_config.yml
+  artifacts:
+    paths:
+      - scrape_config.yml
+  only:
+    - main
+
+deploy_to_vm:
+  stage: deploy
+  image: alpine
+  script:
+    - echo "將 scrape_config.yml 傳送到 VM"
+    - scp scrape_config.yml prometheus@your-vm-ip:/etc/prometheus/scrape_config.yml
+  only:
+    - main
+  dependencies:
+    - generate_prometheus_config
