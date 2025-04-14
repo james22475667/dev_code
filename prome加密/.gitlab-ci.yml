@@ -1,0 +1,24 @@
+stages:
+  - generate  # ✅ 定義階段
+
+generate_cre_files:
+  stage: generate
+  image: alpine:latest  # ✅ 使用 Alpine 輕量映像
+  before_script:
+    - apk add --no-cache jq  # ✅ 安裝 jq，用來解析 JSON
+  script:
+    - echo "📂 建立 cre_files 資料夾"
+    - mkdir -p cre_files
+
+    - echo "🔍 從 passwords.json 解析產生 .cre 檔案"
+    - |
+      for key in $(jq -r 'keys[]' passwords.json); do  # ✅ 逐一讀取 JSON 的每個 key，例如 aa, bb, cc
+        var_name=$(jq -r --arg k "$key" '.[$k]' passwords.json)  # ✅ 取得該 key 對應的變數名，例如 ap, bp, cp
+        var_value=$(printenv "$var_name")  # ✅ 從 GitLab CI/CD 環境變數中讀出值，例如 111
+        echo -n "$var_value" > "cre_files/${key}.cre"  # ✅ 寫入 cre_files/aa.cre
+        echo "✅ 已建立 cre_files/${key}.cre"
+      done
+
+  artifacts:
+    paths:
+      - cre_files/  # ✅ 產生的 cre_files 資料夾會被打包上傳 artifacts

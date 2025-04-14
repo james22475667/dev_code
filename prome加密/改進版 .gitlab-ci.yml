@@ -1,0 +1,37 @@
+stages:
+  - generate
+
+generate_cre_files:
+  stage: generate
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache jq
+  script:
+    - echo "📂 建立 cre_files 資料夾"
+    - mkdir -p cre_files
+
+    - echo "🔍 從 passwords.json 解析產生 .cre 檔案"
+    - |
+      error_flag=0  # ⛳ 記錄是否有變數遺漏
+      for key in $(jq -r 'keys[]' passwords.json); do
+        var_name=$(jq -r --arg k "$key" '.[$k]' passwords.json)
+        var_value=$(printenv "$var_name")
+
+        if [ -z "$var_value" ]; then
+          echo "❌ 錯誤：環境變數 $var_name 未設定（用於 $key.cre）"
+          error_flag=1
+        else
+          echo -n "$var_value" > "cre_files/${key}.cre"
+          echo "✅ 已建立 cre_files/${key}.cre（來自 $var_name）"
+        fi
+      done
+
+      # 🚨 若有任一變數缺失，就讓 job 失敗
+      if [ "$error_flag" -ne 0 ]; then
+        echo "🚫 Job 結束：有未設定的變數，請確認 GitLab CI/CD Settings 中的變數"
+        exit 1
+      fi
+
+  artifacts:
+    paths:
+      - cre_files/
